@@ -1,0 +1,74 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF QA App Result</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #ffffff; /* White text color */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .result-container {
+            background-color: #333333; /* Darker gray box color */
+            padding: 20px;
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* White shadow */
+            margin: 20px; /* Adjust the margin as needed */
+        }
+
+        h2 {
+            text-align: center;
+            color: #61dafb; /* Light blue header color */
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 20px; /* Adjust the top position as needed */
+            right: 20px; /* Adjust the right position as needed */
+            display: flex;
+        }
+
+        img.logo {
+            height: 80px;
+            margin: 0 20px; /* Adjust the margin as needed */
+            border-radius: 8px; /* Add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Add animation for the logos */
+        img.logo:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2>Question: {{ question }}</h2>
+        <p>Predicted Answer: {{ predicted_answer }}</p>
+    </div>
+    
+    <!-- Logo container for side-by-side logos -->
+    <div class="logo-container">
+        <img class="logo" src="{{ url_for('static', filename='logo1.png') }}" alt="Logo 1">
+        <img class="logo" src="{{ url_for('static', filename='logo2.png') }}" alt="Logo 2">
+    </div>
+</body>
+</html>

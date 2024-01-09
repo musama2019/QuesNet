@@ -1,0 +1,87 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF QA App</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input[type="file"], input[type="text"], select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        img.logo {
+            height: 80px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Questioning Answering System with BERT</h1>
+    <!-- Logos added here -->
+    <img class="logo" src="{{ url_for('static', filename='logo1.png') }}" alt="Logo 1">
+    <img class="logo" src="{{ url_for('static', filename='logo2.png') }}" alt="Logo 2">
+    
+    <form method="post" enctype="multipart/form-data">
+        <label for="input_type">Select input type:</label>
+        <select name="input_type" required>
+            <option value="pdf">PDF</option>
+            <option value="text">Text</option>
+            <option value="excel">Excel</option>
+        </select>
+        <br>
+        <label for="file">Upload file:</label>
+        <input type="file" name="file" required>
+        <br>
+        <label for="question">Ask a question:</label>
+        <input type="text" name="question" required>
+        <br>
+        <button type="submit">Get Answer</button>
+    </form>
+</body>
+</html>
