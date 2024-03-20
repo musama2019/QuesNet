@@ -19,3 +19,9 @@ Install dependencies.
 Train the model using training.py.
 Evaluate the model's performance with evaluate.py.
 Start the Flask app using python app.py and navigate to the provided URL to interact with QuesNet.
+
+**Achievement**
+
+Presented QuesNet Project at a Bootcamp:
+
+I had the honor of presenting the QuesNet project at a prestigious bootcamp attended by 30 participants from various industries and academic backgrounds. Our project underwent rigorous evaluation by industry experts and professors, where it stood out as the best among other NLP projects. Additionally, it was recognized as the 3rd best project overall, showcasing its excellence and innovation in the field.
