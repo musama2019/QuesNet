@@ -1,7 +1,7 @@
 
-**QuesNet: Question Answering System**
+##QuesNet: Question Answering System
 
-QuesNet is a chatbot designed to provide answers to questions based on a provided corpus, which can be in PDF, Word, or Excel format. It utilizes a pre-trained BERT model fine-tuned on the SQuAD 2.0 dataset. If an answer is not found in the provided information, it gracefully informs the user.
+Introducing QuesNet, your intelligent companion for instant answers to all your queries within your organization's vast corpus of documents. QuesNet is not just any chatbot; it's your go-to solution for unlocking the wealth of knowledge buried within PDFs, Word documents, or Excel sheets. Powered by a sophisticated pre-trained BERT model, fine-tuned on the SQuAD 2.0 dataset, QuesNet delivers accurate responses with lightning speed. Its seamless integration with various file formats ensures effortless access to information. And here's the beauty of it – if QuesNet can't find an answer, it gracefully informs you, saving time and frustration. With QuesNet by your side, navigating through your organization's documentation has never been smoother, enabling you to make informed decisions with confidence.
 
 **Key Components:**
 
